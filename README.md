@@ -37,7 +37,7 @@ The second approach, which this project uses, is to give the LSTM our entire seq
  ***the first value returned by LSTM is all of the hidden states throughout***
  ***the sequence. the second is just the most recent hidden state***
 
-# Add the extra 2nd dimension
+## Add the extra 2nd dimension
 
 
 inputs = torch.cat(inputs).view(len(inputs), 1, -1)
