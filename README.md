@@ -34,8 +34,8 @@ for i in inputs:
     out, hidden = lstm(i.view(1, 1, -1), hidden)
 The second approach, which this project uses, is to give the LSTM our entire sequence and have it produce a set of outputs and the last hidden state:
 
-# the first value returned by LSTM is all of the hidden states throughout
-# the sequence. the second is just the most recent hidden state
+ ***the first value returned by LSTM is all of the hidden states throughout***
+ ***the sequence. the second is just the most recent hidden state***
 
 # Add the extra 2nd dimension
 
